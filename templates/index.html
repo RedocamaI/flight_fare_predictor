@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Form</title>
+</head>
+
+<body>
+    <h1>Flight Booking Form</h1>
+    <form method="POST" action="/submit">
+        <label for="dep_hour">Departure Hour:</label>
+        <input type="number" id="dep_hour" name="dep_hour" required><br>
+
+        <label for="dep_mins">Departure Minutes:</label>
+        <input type="number" id="dep_mins" name="dep_mins" required><br>
+
+        <label for="arrival_hour">Arrival Hour:</label>
+        <input type="number" id="arrival_hour" name="arrival_hour" required><br>
+
+        <label for="arrival_min">Arrival Minutes:</label>
+        <input type="number" id="arrival_min" name="arrival_min" required><br>
+
+        <label for="duration_hour">Duration Hour:</label>
+        <input type="number" id="duration_hour" name="duration_hour" required><br>
+
+        <label for="duration_min">Duration Minutes:</label>
+        <input type="number" id="duration_min" name="duration_min" required><br>
+
+        <label for="Total_Stops">Total Stops:</label>
+        <input type="number" id="Total_Stops" name="Total_Stops" required><br>
+
+        <label for="journey_day">Journey Day:</label>
+        <input type="number" id="journey_day" name="journey_day" required><br>
+
+        <label for="journey_month">Journey Month:</label>
+        <input type="number" id="journey_month" name="journey_month" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
