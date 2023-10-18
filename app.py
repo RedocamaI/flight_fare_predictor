@@ -23,10 +23,10 @@ def submit():
     journey_month = request.form.get('journey_month')
 
     prediction = forest_model.predict([[dep_hour, dep_mins, arrival_hour, arrival_min, duration_hour, duration_min, total_stops, journey_day, journey_month]])
-    
     output = round(prediction[0], 2)
 
-    return str(output)
+    # return str(output)
+    return render_template('result.html', output=output)
 
 if __name__ == '__main__':
     app.run(debug=True)

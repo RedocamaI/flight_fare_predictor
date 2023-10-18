@@ -1,0 +1,223 @@
+/* styles.css */
+
+/* Resetting default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting a background color for the entire page */
+body {
+  /* background-color: #f4f4f4;
+   */
+  background: linear-gradient(to bottom, #9284e3, #78a0c5);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Styling the heading section */
+.heading {
+  color: #fff;
+  padding: 40px 0;
+}
+
+.heading h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+/* Styling the project section */
+.project {
+  /* background: linear-gradient(to right, #ffffff, #d0d0d1); */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: left;
+}
+
+.project h1 {
+  color: #007bff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.project p {
+  font-size: 18px;
+}
+
+/* Styling the form section */
+.form {
+  /* background: linear-gradient(to right, #ffffff, #d0d0d1); */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: center;
+}
+
+.form h1 {
+  color: #007bff;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.form p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.form form {
+  text-align: left;
+}
+
+.form label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Styling the about-me section */
+.about-me {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: left;
+}
+
+.about-me h1 {
+  color: #021bff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-me img {
+  height: 150px;
+  max-width: 50%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Styling the about-me section with a gradient background */
+.about-me {
+  /* background: linear-gradient(to right, #ffffff, #d0d0d1); */
+  color: #050505;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: left;
+}
+
+.about-me h1 {
+  color: #007bff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-me img {
+  max-width: 100%;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Styling the contact section */
+.contact {
+  /* background: linear-gradient(to right, #ffffff, #d0d0d1); */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: left;
+}
+
+.contact h1 {
+  color: #007bff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact ul {
+  list-style: none;
+}
+
+.contact ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Styling the contact section with icons */
+.contact ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Use the `::before` pseudo-element to add icons */
+.contact a::before {
+  content: "\f09b"; /* Font Awesome icon code for GitHub */
+  font-family: "Font Awesome 6 Brands";
+  margin-right: 5px;
+}
+
+.contact a[href*="linkedin.com"]::before {
+  content: "\f08c"; /* Font Awesome icon code for LinkedIn */
+  font-family: "Font Awesome 6 Brands";
+  margin-right: 5px;
+}
+
+.contact a[href*="mailto:"]::before {
+  content: "\f0e0"; /* Font Awesome icon code for email */
+  font-family: "Font Awesome 6 Solid";
+  margin-right: 5px;
+}

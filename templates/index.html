@@ -1,44 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Flight-fare-predictor</title>
+  </head>
+  <body>
+    <section class="heading">
+      <h1>Flight-fare-predictor</h1>
+    </section>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight Booking Form</title>
-</head>
+    <section class="project">
+      <h1>About the Project</h1>
+      <p>
+        This is a Flight Fare Prediction project, a data analysis and machine
+        learning project designed to predict the fare of flights based on
+        several key factors, including the date of travel, day of the week,
+        departure and arrival times, flight duration, and the month of the
+        journey. The project has been implemented using a Random Forest
+        Regressor model, which has achieved an accuracy of 79.18%.
+      </p>
+    </section>
 
-<body>
-    <h1>Flight Booking Form</h1>
-    <form method="POST" action="/submit">
+    <section class="form">
+      <h1>Predict the fare here!</h1>
+      <p>Just fill in the details!</p>
+      <!-- The form fields go here -->
+      <form method="POST" action="/submit">
         <label for="dep_hour">Departure Hour:</label>
-        <input type="number" id="dep_hour" name="dep_hour" required><br>
+        <input type="number" id="dep_hour" name="dep_hour" required /><br />
 
         <label for="dep_mins">Departure Minutes:</label>
-        <input type="number" id="dep_mins" name="dep_mins" required><br>
+        <input type="number" id="dep_mins" name="dep_mins" required /><br />
 
         <label for="arrival_hour">Arrival Hour:</label>
-        <input type="number" id="arrival_hour" name="arrival_hour" required><br>
+        <input
+          type="number"
+          id="arrival_hour"
+          name="arrival_hour"
+          required
+        /><br />
 
         <label for="arrival_min">Arrival Minutes:</label>
-        <input type="number" id="arrival_min" name="arrival_min" required><br>
+        <input
+          type="number"
+          id="arrival_min"
+          name="arrival_min"
+          required
+        /><br />
 
         <label for="duration_hour">Duration Hour:</label>
-        <input type="number" id="duration_hour" name="duration_hour" required><br>
+        <input
+          type="number"
+          id="duration_hour"
+          name="duration_hour"
+          required
+        /><br />
 
         <label for="duration_min">Duration Minutes:</label>
-        <input type="number" id="duration_min" name="duration_min" required><br>
+        <input
+          type="number"
+          id="duration_min"
+          name="duration_min"
+          required
+        /><br />
 
         <label for="Total_Stops">Total Stops:</label>
-        <input type="number" id="Total_Stops" name="Total_Stops" required><br>
+        <input
+          type="number"
+          id="Total_Stops"
+          name="Total_Stops"
+          required
+        /><br />
 
         <label for="journey_day">Journey Day:</label>
-        <input type="number" id="journey_day" name="journey_day" required><br>
+        <input
+          type="number"
+          id="journey_day"
+          name="journey_day"
+          required
+        /><br />
 
         <label for="journey_month">Journey Month:</label>
-        <input type="number" id="journey_month" name="journey_month" required><br>
+        <input
+          type="number"
+          id="journey_month"
+          name="journey_month"
+          required
+        /><br />
 
-        <input type="submit" value="Submit">
-    </form>
-</body>
+        <input type="submit" value="Predict" />
+      </form>
+    </section>
 
+    <section class="about-me">
+      <h1>About Me</h1>
+      <img src="{{url_for('static', filename='images/me.jpg')}}" alt="Your Photo" />
+      <p>
+        I'm Suraj Kumar Barnwal, a Computer Science undergraduate with work
+        experience in Python, pandas, numpy, scikit-learn, and data
+        visualization tools. I'm passionate about data science and
+        problem-solving, with a strong foundation in data structures and
+        algorithms. I'm eager to collaborate on data science projects; if you
+        think I'd be a great fit, feel free to get in touch!
+      </p>
+    </section>
+
+    <section class="contact">
+      <h1>Reach Me</h1>
+      <ul>
+        <li>
+          <a href="https://github.com/RedocamaI" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/suraj-barnwal/" target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li>Email: surajbarnwal24@gmail.com</li>
+      </ul>
+    </section>
+  </body>
 </html>
